@@ -1,0 +1,89 @@
+  //todo-tree 标签配置  标签兼容大小写字母(很好的功能!!!)
+  "todo-tree.regex.regex": "((%|#|//|--|<!--|^\\s*\\*)\\s*($TAGS)|^\\s*- \\[ \\])",
+  // ((%|#|//|--|<!--|^\\s*\\*)\\s*($TAGS)|^\\s*- \\[ \\])
+  // (latex|python|c,java|mysql|html|多行/**/|标签|- [])
+  "todo-tree.general.tags": [
+    "TODO", //添加自定义的标签成员,将在下面实现它们的样式
+    "BUG",
+    "tag",
+    "done",
+    "mark",
+    "change",
+    "嫦娥",
+	"temp",
+	"ques"
+  ],
+  "todo-tree.regex.regexCaseSensitive": false,
+  "todo-tree.highlights.defaultHighlight": { //如果相应变量没赋值就会使用这里的默认值
+    "foreground": "#000", //字体颜色
+    "background": "#ff0", //背景色
+    "icon": "check", //标签样式 check 是一个对号的样式
+    "rulerColour": "#ff0", //边框颜色
+    "type": "tag", //填充色类型  可在TODO TREE 细节页面找到允许的值 
+    "iconColour": "#ff0" //标签颜色
+  },
+  "todo-tree.highlights.customHighlight": {
+    //todo 		需要做的功能
+    "TODO": {
+      "icon": "alert", //标签样式
+      "background": "#c9c552", //背景色
+      "rulerColour": "#c9c552", //外框颜色
+      "iconColour": "#c9c552", //标签颜色
+    },
+    //bug		必须要修复的BUG  
+    "BUG": {
+      "background": "#e60000",
+      "icon": "bug",
+      "rulerColour": "#e60000",
+      "iconColour": "#e60000",
+    },
+    //tag		标签
+    "tag": {
+      "background": "#38b2f4",
+      "icon": "tag",
+      "rulerColour": "#38b2f4",
+      "iconColour": "#38b2f4",
+      "rulerLane": "full"
+    },
+    //done		已完成
+    "done": {
+      "background": "#5eec95",
+      "icon": "check",
+      "rulerColour": "#5eec95",
+      "iconColour": "#5eec95",
+    },
+    //mark     	标记一下
+    "mark:": {
+      "background": "#f90",
+      "icon": "note",
+      "rulerColour": "#f90",
+      "iconColour": "#f90",
+    },
+    //change		修改代码
+    "嫦娥": {
+      "background": "#1a6840",
+      "icon": "flame",
+      "rulerColour": "#1a6840",
+      "iconColour": "#1a6840",
+    },
+    //change		修改代码
+    "change": {
+      "background": "#1a6840",
+      "icon": "flame",
+      "rulerColour": "#1a6840",
+      "iconColour": "#1a6840",
+    },
+	"temp": {
+      "background": "#eff",
+      "icon": "edit",
+      "rulerColour": "#eff",
+      "iconColour": "#eff",
+    },
+	// 疑惑
+	"ques": {
+      "background": "#9b1e64",
+      "icon": "question",
+      "rulerColour": "#9b1e64",
+      "iconColour": "#9b1e64",
+    },
+  }

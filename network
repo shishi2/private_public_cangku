@@ -1,0 +1,28 @@
+SOCK_DGRAM
+SOCK_TREAM
+SOCK_RAW
+
+应用层 表示层 会话层 传输层 网络层 数据链路层 物理层
+应用层 传输层 网络层 数据链路层 物理层
+
+SO_BROADCAST
+SO_REUSEADDR
+
+AF_INET
+AF_INET6
+AF_UNIX
+
+AI_ADDRCONFIG
+AI_PASSIVE
+AI_V4MAPPED
+AI_CANONNAME
+
+select.POLLIN
+select.POLLOUT
+select.POLLERR
+select.POLLHUB
+
+mod_wsgi
+app(environ, start_response)
+
+

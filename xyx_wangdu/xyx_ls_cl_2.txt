@@ -1,0 +1,96 @@
+## 出价策略
+### 第一步出价16-22，优先选择中间位置
+### 第二步依照对方出价进行决策
+若对方第一步出价在<=10则出8-12
+若对方出价在15以上则出6-8
+### 之后依照双方资金差距以及场上局势进行决策
+若是已经占据两个位置，自己即将取得胜利，则出价当前资金的80%；对方即将取得胜利，依照之前对方所出价格，出价+5-10
+对关键获胜位置或阻止对手胜利的位置进行激进出价
+
+### 中局阶段(3-5步)
+防守位置（阻断对手），紧急情况（对手下一步可获胜）：当前资金的35-45%
+一般阻断：当前资金的20-30%
+进攻位置（自己构建连线）：
+有潜在获胜机会：当前资金的30-40%
+创造双线机会：当前资金的35-45%
+普通位置：当前资金的10-15%
+
+## 资金规划
+总体分配：前期(1-3步)最多使用40%资金，中期(4-6步)保留40%资金，终局(7-9步)灵活运用剩余资金
+关键决策点：始终为最后一个潜在的关键位置保留至少25%的初始资金
+
+## 行动策略
+### 若已经取得两个连续的位置，则以取得第三个位置使之连成线为最高优先级
+#### 若对方已经取得两个连续的位置，则以拦截对方为最高优先级
+#### 第一步优先选择中心4位置
+若是无法取得中心位置，则依照第二步进行决策
+#### 第二步则优先选择四个角0268
+#### 之后依照当前局势，以取得胜利为最高优先级，其次是阻拦对方取得胜利
+
+
+
+
+Bidding Strategy:
+Bid = Base Bid × (1 + Threat Factor) + Random Fluctuation (±1%)
+Base Bid = min(20% × Current Cash, Current Cash)
+
+Threat Factor: High (0.8-1.0) for immediate win/block, Medium (0.3-0.5) for strategic positions (corners), Low (0.1-0.2) for non-critical moves (edges).
+
+Specific Rules:
+Round 1 (Center): Bid 26-30% for position 4.
+High Threat: Win: min(90% Cash, Cash - $1). Block: min(85% Cash, Cash - $1). Always reserve $1.
+Non-Threat: Corners: Medium threat. Edges: Low threat.
+Opponent Center: No threat: ≤15%. Potential win line: ≤35%.
+Low Cash (<$10): Bid $1.
+
+Action Strategy:
+Priority: Immediate win > Block opponent win > Center > Corners > Edges.
+
+Global Rules:
+Cash Management: Track opponent spending (100 - total opponent bids).
+Tie Avoidance: Add randomness to bids.
+Post-Loss: Update board/threat status and adjust next bid.
+Emergency: If cash ≤ $5, just bid $1.
+If cash == $1,bid $0.
+If already occupying two consecutive positions, bid all but $1 or bid > $40.
+
+Win Condition: Three-in-a-row or exhaust opponent funds.
+
+-----
+
+
+Bidding Strategy:
+Bid = Base Bid × (1 + Threat Factor) + Random Fluctuation (±1%)
+Base Bid = min(20% × Current Cash, Current Cash)
+Threat Factor: High (0.8-1.0) for immediate win/block, Medium (0.3-0.5) for strategic positions (corners), Low (0.1-0.2) for non-critical moves (edges).
+
+Specific Rules:
+Round 1 (Center): Bid 26-30% for position 4.
+High Threat: Win: min(90% Cash, Cash - $1). Block: min(85% Cash, Cash - $1). Always reserve $1.
+Non-Threat: Corners: Medium threat. Edges: Low threat.
+Opponent Center: No threat: ≤15%. Potential win line: ≤35%.
+Low Cash (<$10): Bid $1.
+
+Action Strategy:
+Priority: Immediate win > Block opponent win > Center > Corners > Edges.
+
+Global Rules:
+Cash Management: Track opponent spending (100 - total opponent bids).
+Tie Avoidance: Add randomness to bids.
+Post-Loss: Update board/threat status and adjust next bid.
+Emergency: If cash ≤ $5, bid $1.
+If cash == $1,bid $0.
+If already occupying two consecutive positions, bid all or bid > 40!!!
+
+Win Condition: Three-in-a-row or exhaust opponent funds.
+
+----
+Our first round bid range: $5~$8, bid position is 4; 
+Our second round bid range: $28~$32; 
+Our third round bid range: $26~$34; 
+Subsequent rounds (Dynamic Threat Response): Immediate Win Detection (we have a two-in-a-row opportunity): Bid = Remaining Funds - $1; 
+Opponent Threat Blocking (opponent has a two-in-a-row opportunity): Bid = min(Remaining Cash × 0.85, Opponent's Last Bid × 1.8) but ≥ $8; 
+Strategic Position Contention (no direct threats): Position Priority: Corner > Center > Edge; Bid = Remaining Cash × [0.25~0.45].
+
+
+

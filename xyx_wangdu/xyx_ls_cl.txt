@@ -1,0 +1,81 @@
+## 出价策略
+### 第一步出价16-22，优先选择中间位置
+### 第二步依照对方出价进行决策
+若对方第一步出价在<=10则出8-12
+若对方出价在15以上则出6-8
+### 之后依照双方资金差距以及场上局势进行决策
+若是已经占据两个位置，自己即将取得胜利，则出价当前资金的80%；对方即将取得胜利，依照之前对方所出价格，出价+5-10
+对关键获胜位置或阻止对手胜利的位置进行激进出价
+
+### 中局阶段(3-5步)
+防守位置（阻断对手），紧急情况（对手下一步可获胜）：当前资金的35-45%
+一般阻断：当前资金的20-30%
+进攻位置（自己构建连线）：
+有潜在获胜机会：当前资金的30-40%
+创造双线机会：当前资金的35-45%
+普通位置：当前资金的10-15%
+
+## 资金规划
+总体分配：前期(1-3步)最多使用40%资金，中期(4-6步)保留40%资金，终局(7-9步)灵活运用剩余资金
+关键决策点：始终为最后一个潜在的关键位置保留至少25%的初始资金
+
+## 行动策略
+### 若已经取得两个连续的位置，则以取得第三个位置使之连成线为最高优先级
+#### 若对方已经取得两个连续的位置，则以拦截对方为最高优先级
+#### 第一步优先选择中心4位置
+若是无法取得中心位置，则依照第二步进行决策
+#### 第二步则优先选择四个角0268
+#### 之后依照当前局势，以取得胜利为最高优先级，其次是阻拦对方取得胜利
+
+
+
+Bidding Strategy
+Opening Phase
+First Move: Bid between 16-22, prioritizing the center position
+Second Move: Base your bid on opponent's first move
+If opponent's first bid was ≤10: Bid 8-12
+If opponent's first bid was >15: Bid 6-8
+Subsequent Moves
+Base decisions on the fund difference between players and the current board situation:
+
+If you occupy two positions in a line (victory imminent): Bid 80% of your current funds
+If opponent is about to win: Bid opponent's previous bid amount +5-10
+For critical winning positions or to block opponent's victory: Make aggressive bids
+Mid-Game Phase (Moves 3-5)
+Defensive Positions (blocking opponent):
+Emergency situation (opponent can win next move): 35-45% of current funds
+General blocking: 20-30% of current funds
+Offensive Positions (building your own line):
+Potential winning opportunity: 30-40% of current funds
+Creating two-way winning opportunities: 35-45% of current funds
+Ordinary Positions: 10-15% of current funds
+Fund Management
+Overall Allocation:
+Early game (Moves 1-3): Use maximum 40% of total funds
+Mid-game (Moves 4-6): Reserve 40% of funds
+Endgame (Moves 7-9): Flexibly utilize remaining funds
+Critical Decision Point: Always reserve at least 25% of initial funds for the last potentially decisive position
+Action Strategy
+Priorities
+If you have two positions in line, securing the third position to complete the line is highest priority
+If opponent has two positions in line, blocking them is highest priority
+First move priority is center position (4)
+If unable to secure center position, proceed to second move strategy
+Second move should prioritize corner positions (0, 2, 6, 8)
+Subsequently, base decisions on the current situation, with winning as highest priority, followed by preventing opponent's victory
+This strategy balances aggressive bidding for optimal positions with careful fund management across all game phases. By adapting bids based on your opponent's behavior and the evolving board state, you can maximize your chances of victory while minimizing unnecessary spending.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
