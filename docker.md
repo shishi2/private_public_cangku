@@ -11,6 +11,9 @@ echo $DISPLAY
 xauth list
 echo $XAUTHORITY
 
+xhost +SI:localuser:root
+xhost +
+
 touch /root/.Xauthority
 xauth add ($(xauth list))
 
